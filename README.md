@@ -10,16 +10,16 @@ Também é necessário que você retorne a resposta com o código `201`.
 
 Para que esse teste passe, é necessário que você conclua o teste anterior. Se tudo ocorreu bem, os repositórios cadastrados deverão aparecerem na listagem da rota **GET** `/repositories` e esse teste irá passar.
 
--[] **Should be able to update repository**
+-[x] **Should be able to update repository**
 
 Para que esse teste passe, você deve permitir que um repositório seja atualizado a partir de seu `id` pela rota **PUT** `/repositories/:id` usando as [informações recebidas pelo corpo da requisição](https://www.notion.so/Desafio-03-Corrigindo-o-c-digo-c15c8a2e212846039a367cc7b763c6dd). Lembre-se de manter as informações que não foram passadas pelo corpo, por exemplo:
 Se o usuário quiser trocar apenas o `title`, mantenha `url` e `techs` que já estavam no repositório.
 
--[] **Should not be able to update a non existing repository**
+-[x] **Should not be able to update a non existing repository**
 
 Para que esse teste passe, você deve verificar se o repositório existe antes de atualizar as informações na rota **PUT** `/repositories/:id`. Caso não exista, retorne um status `404` (que é o status para **Not Found**) com uma mensagem de erro no formato `{ error: "Mensagem do erro" }`.
 
--[] **Should not be able to update repository likes manually**
+-[x] **Should not be able to update repository likes manually**
 
 Para que esse teste passe, você deve impedir que a quantidade de likes de um repositório seja alterada manualmente através da rota **PUT** `/repositories/:id`.
 Por exemplo:
